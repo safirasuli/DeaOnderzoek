@@ -1,7 +1,6 @@
 package oose.dea;
 
 import oose.dea.datasource.util.DatabaseProperties;
-import sun.rmi.runtime.Log;
 
 public class JdbcApp {
 
