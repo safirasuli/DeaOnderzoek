@@ -8,7 +8,7 @@ import java.util.Properties;
 public class DatabaseProperties {
 
     private Properties properties;
-    private static final  String PROPERTYNAME = "database.properties";
+    private static final  String PROPERTYNAME = "src/main/resources/database.properties";
     private static final String CONNECTIONURL = "connectionstring";
     private static final String DRIVER = "driver";
     public DatabaseProperties() {
@@ -21,6 +21,8 @@ public class DatabaseProperties {
 
         InputStream stream = null;
         try{
+
+            ClassLoader.class.getResourceAsStream("/path/file.ext");
             stream = new FileInputStream(PROPERTYNAME);
             properties.load(stream);
 
